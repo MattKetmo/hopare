@@ -1,0 +1,142 @@
+.navbar {
+  background-color: rgba(#fff, 0.9);
+  transition: background-color 0.5s ease-out;
+  min-height: 60px;
+  border-bottom: 0;
+}
+
+.navbar-brand {
+  line-height: 26px;
+  font-size: 24px;
+
+  background-image: url('/assets/static/logo-black.png');
+  background-repeat: no-repeat;
+  background-position: center left;
+
+  margin-top: (60px - 45px) / 2;
+  width: 194px;
+  height: 45px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  line-height: 26px;
+  font-size: 14px;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #444;
+
+  &:hover {
+    background-color: rgba(#fff, 0.7);
+  }
+}
+
+.navbar.navbar-transparent {
+  background-color: rgba(#000, 0.2);
+
+  .navbar-nav > li > a {
+    color: #ddd;
+    &:hover {
+      color: #444;
+    }
+  }
+
+  .navbar-brand {
+    opacity: 0;
+  }
+}
+
+
+
+/*
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  padding: 0;
+  width: 100%;
+  height: 65px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+
+  clear: both;
+  float: none;
+  width: 100%;
+
+  &__brandname {
+    margin: 0 10px;
+    padding: 0;
+  }
+
+  &__brandname a {
+    text-indent: -9999px;
+    white-space: nowrap;
+
+    background-image: url('/assets/static/logo-black.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+
+    margin-top: (65px - 45px) / 2;
+    width: 194px;
+    height: 45px;
+
+    float: left;
+    clear: none;
+  }
+
+  &__menu {
+    position: relative;
+    display: inline-block;
+    float: right;
+    clear: none;
+    margin: 0 10px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none
+    }
+
+    li {
+      clear: none;
+      float: left;
+
+      a {
+        display: inline-block;
+        padding: 0 0.778em;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.778em;
+        height: 65px;
+        line-height: 65px;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+
+        color: #444;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &--transparent {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+  }
+
+  &--transparent &__menu li a {
+    color: #fafafa;
+
+    &:hover {
+      color: #444;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  &--transparent &__brandname a {
+    background-image: none;
+    width: 0;
+  }
+}
+*/

@@ -1,0 +1,21 @@
+.has-overlay {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(#000, 0.1);
+    z-index: 2;
+  }
+
+  &.overlay-dark::after {
+    background-color: rgba(#000, 0.3);
+  }
+  &.overlay-vdark::after {
+    background-color: rgba(#000, 0.5);
+  }
+}

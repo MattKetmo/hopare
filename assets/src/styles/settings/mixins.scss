@@ -1,0 +1,5 @@
+$font-base-path: "/assets/src/fonts";
+
+@function font-url($path) {
+  @return url("#{$font-base-path}/#{$path}");
+}
